@@ -1,6 +1,8 @@
 import webbrowser
 
-class Movie():
+class Movie(object):
+	""" A class that stores movie related information along with ability to show a movie trailer. """
+	VALID_RATINGS = ["G", "PG", "PG-13", "R"]  # class variable
 
 	def __init__(self, movie_title, movie_storyline, poster_image, trailer_youtube):
 		self.title = movie_title
